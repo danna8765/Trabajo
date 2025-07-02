@@ -1,4 +1,6 @@
-# Mapa Conceptual de Composición
+#  Mapa Conceptual de Composición
+
+```plaintext
                            +----------------------------------+
                            |      Composición en POO         |
                            +----------------------------------+
@@ -18,21 +20,23 @@
 +---------------------------+                             +---------------------------+
 | - Crea y posee Motor      |                             | - No puede existir solo   |
 | - Controla su ciclo de    |                             | - Se crea dentro del Coche|
-|   vida                   |                             |                           |
+|   vida                    |                             |                           |
 +---------------------------+                             +---------------------------+
          |                                                               |
          +-------------------------------> Si Coche se destruye         |
                                          entonces Motor también. <------+
 
-                    Composición: Relación de "propiedad total"
-                   - El objeto contenido depende del contenedor
-                   - No puede existir por separado ni compartirse
-# Diagrama UML de Composición
-+----------------+          +----------------+
-|     Coche      |<>------- |     Motor      |
-+----------------+          +----------------+
-| - motor: Motor |          | - tipo: str    |
-+----------------+          +----------------+
-| + __init__()   |          | + __init__()   |
-| + encender()    |          | + arrancar()   |
-+----------------+          +----------------+
+ Composición: Relación de "propiedad total"
+- El objeto contenido depende del contenedor
+- No puede existir por separado ni compartirse
+```
+
+## Diagrama UML de Composición
++----------------+         <>         +----------------+
+|     Coche      |------------------->|     Motor      |
++----------------+                   +----------------+
+| - motor: Motor |                   | - tipo: str    |
++----------------+                   +----------------+
+| + __init__()   |                   | + __init__()   |
+| + encender()   |                   | + arrancar()   |
++----------------+                   +----------------+

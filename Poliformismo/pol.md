@@ -1,5 +1,6 @@
-# Mapa Conceptual de Herencia 
+#  Mapa Conceptual de Polimorfismo
 
+```plaintext
                             +-------------------------------------+
                             |       Polimorfismo en POO           |
                             +-------------------------------------+
@@ -30,22 +31,24 @@
                         |  - Llama a su método hablar() |
                         +------------------------------+
 
-        Polimorfismo: Permite usar el mismo método en diferentes tipos
-        - Código más flexible y extensible
-        - No importa el tipo de objeto, solo que tenga el método esperado
+Polimorfismo: Permite usar el mismo método en diferentes tipos
+- Código más flexible y extensible
+- No importa el tipo de objeto, solo que tenga el método esperado
+```
+## Diagrama UML 
+```plaintext
 
-# Diagrama UML de Herencia 
 
-            <<interface>>
-            Animal
-               |
-       +-------+--------+
-       |                |
-+--------------+  +--------------+
-|    Perro     |  |    Gato      |
-+--------------+  +--------------+
-| + hablar()   |  | + hablar()   |
-+--------------+  +--------------+
+                       <<interface>>
+               Animal
+                  |
+          +-------+--------+
+          |                |
+   +--------------+  +--------------+
+   |    Perro     |  |    Gato      |
+   +--------------+  +--------------+
+   | + hablar()   |  | + hablar()   |
+   +--------------+  +--------------+
 
        (Ambas clases implementan el mismo método: hablar())
 

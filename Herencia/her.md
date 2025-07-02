@@ -1,4 +1,6 @@
-# Mapa conceptual de Herencia  
+#  Mapa Conceptual de Herencia
+
+```plaintext
                              +-------------------------------+
                              |       Herencia en POO         |
                              +-------------------------------+
@@ -23,18 +25,25 @@
              +----------------------------+----------------------------+
                                           |
                                           v
-                      Herencia: "Es un tipo de..." (Estudiante es una Persona)
-                       - Reutiliza código existente
-                       - La clase hija puede extender o sobrescribir comportamientos
-# Diagrama UML de Herencia 
+                 Herencia: "Es un tipo de..." (Estudiante es una Persona)
+                 - Reutiliza código existente
+                 - La clase hija puede extender o sobrescribir comportamientos
+```
+## Diagrama UML 
 
-+----------------+          
-|    Persona     |          
-+----------------+          
-| - nombre: str  |          
-+----------------+          
-| + __init__()   |          
-| + saludar()    |          
-+----------------+          
-         ^
-         
+```plaintext
++----------------+
+|    Persona     |
++----------------+
+| - nombre: str  |
++----------------+
+| + __init__()   |
+| + saludar()    |
++----------------+
+         ▲
+         |
++--------------------+
+|    Estudiante      |
++--------------------+
+| + estudiar()       |
++--------------------+

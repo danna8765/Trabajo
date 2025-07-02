@@ -1,6 +1,6 @@
- 
- # Mapa Conoceptual de Agregación
- 
+# Mapa Conceptual de Agregación
+
+```plaintext
                              +-----------------------------+
                              |     Agregación en POO       |
                              +-----------------------------+
@@ -24,21 +24,21 @@
               +-----------------------> Pueden vivir                  |
                                           por separado <--------------+
 
-                 Si se destruye el objeto contenedor,
-                     el contenido puede seguir existiendo.
+     Si se destruye el objeto contenedor,
+         el contenido puede seguir existiendo.
+```
 
-
-# Diagrama UML de Agregación
-
+## Diagrama UML de Agregación
 ```plaintext
-+----------------+          +----------------+
-|     Autor      |          |      Libro     |
-+----------------+          +----------------+
-| - nombre: str  |<>------- | - titulo: str  |
-+----------------+          | - autor: Autor |
-| + __init__()   |          +----------------+
-+----------------+          | + __init__()   |
-                            +----------------+
+
++----------------+           +----------------+
+|     Autor      |           |     Libro      |
++----------------+           +----------------+
+| - nombre: str  |<>-------- | - titulo: str  |
+| + __init__()   |           | - autor: Autor |
++----------------+           +----------------+
+                             | + __init__()   |
+                             +----------------+
 
 
 

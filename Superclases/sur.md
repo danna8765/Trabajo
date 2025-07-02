@@ -1,4 +1,6 @@
-# Mapa Conceptual de Superclases
+#  Mapa Conceptual de Superclases
+
+```plaintext
                            +----------------------------------+
                            |         Superclase en POO        |
                            +----------------------------------+
@@ -24,9 +26,10 @@
                       - Subclase reutiliza código de superclase
                       - Subclase puede extender o modificar comportamiento
 
+```
+## Diagrama UML 
+```plaintext
 
-
-# Diagrama UML de Superclases
 +---------------------+
 |     Vehiculo        |  <<superclase/base class>>
 +---------------------+
@@ -35,7 +38,7 @@
 | + __init__(marca)   |
 | + arrancar()        |
 +---------------------+
-          ^
+          ▲
           |
 +---------------------+
 |       Coche         |  <<subclase/derived class>>
